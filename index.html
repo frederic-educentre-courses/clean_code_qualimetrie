@@ -7,7 +7,7 @@
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 		/>
 
-		<title>reveal.js</title>
+		<title>Clean Code & Qualimétrie</title>
 
 		<link rel="stylesheet" href="dist/reset.css" />
 		<link rel="stylesheet" href="dist/reveal.css" />
@@ -19,8 +19,119 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Clean Code & Qualimétrie avec SonarQube</h1>
+				</section>
+				<section>
+					<h2>Qu'est-ce que le Clean Code ?</h2>
+					<ul>
+						<li>Un code facile à lire et à comprendre</li>
+						<li>Un code facile à maintenir et à faire évoluer</li>
+						<li>Un code qui respecte les bonnes pratiques de développement</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Principes</h2>
+					</section>
+					<section>
+						<h2>Conventions de codage</h2>
+						<ul>
+							<li>naming conventions</li>
+							<li>code formatting</li>
+							<li>commenting</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Revues de code</h2>
+						<ul>
+							<li>Une pratique de développement collaborative</li>
+							<li>La vérification de la qualité du code par les pairs</li>
+							<li>L'amélioration continue du code</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Analyse de code</h2>
+						<ul>
+							<li>Une pratique de développement automatisée</li>
+							<li>La vérification de la qualité du code par des outils d'analyse statique</li>
+							<li>L'amélioration continue du code grâce à des rapports d'analyse</li>
+						</ul>
+					</section>
+					<section>
+						<h2>debt / dette technique</h2>
+						<ul>
+							<li>Un concept qui décrit les compromis faits dans le développement du code</li>
+							<li>Peut être intentionnelle ou non intentionnelle</li>
+							<li>Peut être payée plus tard avec des intérêts</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Outils</h2>
+					</section>
+					<section>
+						<h2>SonarQube</h2>
+						<ul>
+							<li>Un outil d'analyse statique du code</li>
+							<li>La détection des problèmes de qualité et de sécurité</li>
+							<li>L'amélioration continue de la qualité du code</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Déploiement de sonarQube avec Docker</h2>
+						<pre><code>
+	docker run -d --name sonarqube -p 9000:9000 sonarqube:community
+						</code></pre>
+					</section>
+					<section>
+						<h2>Configuration de SonarQube</h2>
+						<p>Mot de passe et nom d'utilisateur par défaut : admin/admin</p>
+					</section>
+					<section>
+						<h2>Exemple d'analyse</h2>
+						<img src="analyse.png" alt="">
+					</section>
+					<section>
+						<h2>Type de problèmes détectés</h2>
+						<ul>
+							<li>Security : Problèmes de sécurité dans le code</li>
+							<li>Reliability : Problèmes de fiabilité dans le code.</li>
+							<li>Maintainability : Problèmes de maintenabilité dans le code</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Niveau de sévérité</h2>
+						<ul>
+							<li>Blocker : Problèmes bloquants</li>
+							<li>High : Problèmes de haute sévérité</li>
+							<li>Medium : Problèmes de moyenne sévérité</li>
+							<li>Low : Problèmes de basse sévérité</li>
+							<li>Info : Informations</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Exemple de problème détecté</h2>
+						<img src="issues.png" alt="">
+					</section>
+					<section>
+						<p>Suggestion de résolution de problèmes</p>
+						<img src="fix_issues.png" alt="">
+					</section>
+					<section>
+						<h2>Rules SonarQube</h2>
+						<img src="rules.png" alt="">
+					</section>
+					<section>
+						<h2>Quality profil</h2>
+						<img src="quality_profil.png" alt="">
+					</section>
+					<section>
+						<h2>Quality Gate</h2>
+						<img src="quality_gate.png" alt="">
+					</section>
+				</section>
 			</div>
 		</div>
 
